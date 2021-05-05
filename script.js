@@ -33,6 +33,7 @@ const linearGrd = () => {
       offerClr("rgb(219, 111, 129)", "rgb(190, 78, 97)");
     }
   });
+
   function color(clr, grd) {
     page.style.background = `linear-gradient(to bottom right, ${clr} 50%, ${grd} 50%)`;
   }
@@ -51,3 +52,38 @@ const linearGrd = () => {
 };
 
 linearGrd();
+
+// const curr
+
+/*const carousel = () => {
+  const page = document.querySelector(".bags");
+  const container = document.querySelectorAll(".container");
+  // btn
+  const prevBtn = document.querySelector(".fa-caret-left");
+  const nxtBtn = document.querySelector(".fa-caret-right");
+  //
+  let counter = 0;
+  const size = container[0].clientWidth;
+
+  nxtBtn.addEventListener("click", () => {
+    if (container.id === "first") {
+      console.log("static");
+    } else {
+      page.style.transition = "transform 0.5s ease-in-out";
+      counter++;
+      page.style.transform = `translateX(${-size * counter}px)`;
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (container.id === "last") {
+      console.log("static");
+    } else {
+      page.style.transition = "transform 0.5s ease-in-out";
+      counter--;
+      page.style.transform = `translateX(${-size * counter}px)`;
+    }
+  });
+};
+
+carousel();*/

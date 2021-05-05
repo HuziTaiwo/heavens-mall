@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
 
-/* background: repeating-linear-gradient(
-    to top right,
-    rgb(220, 20, 60) 0%,
-    rgb(0, 153, 173) 15%,
-    rgb(7, 160, 109) 30%,
-    rgb(219, 111, 129) 45%
-  ); */
+/***--------COLOR------------
+--------------------***/
+/* #0099ad; */
+/* #027888; */
+/* #c92f4e; */
+/* #bd1234; */
+/* #07a06d; */
+/* #1a7e56; */
+/* #db6f81; */
+/* #be4e61; */
 
 * {
   margin: 0;
@@ -67,11 +70,7 @@ a {
   align-items: center;
   justify-content: space-between;
   border-radius: 3px;
-  background: linear-gradient(
-    45deg,
-    rgb(0, 153, 173) 50%,
-    rgb(2, 120, 136) 50%
-  );
+  background: linear-gradient(45deg, #0099ad 50%, #027888 50%);
   z-index: 1;
   transition: all 0.5s ease;
   overflow: hidden;
@@ -150,15 +149,30 @@ a {
 
 section.bags {
   position: relative;
+  width: 100%;
+  display: flex;
+  /* overflow: hidden; */
 }
 
-.img_container {
+.container {
+  min-width: 100%;
+}
+/* .img_container {
   width: 100px;
   border: 1px solid white;
+} */
+
+.img_container img {
+  width: 100%;
+  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); */
+  background: rgba(255, 255, 255, 0.8);
+  /* mix-blend-mode: overlay; */
+  mix-blend-mode: luminosity;
 }
 .collection {
   height: 80vh;
   padding: 0 100px;
+  width: 100%;
   background: linear-gradient(
     to bottom right,
     rgb(0, 153, 173) 50%,
@@ -184,8 +198,8 @@ section.bags {
 }
 
 .collection .price {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,6 +209,20 @@ section.bags {
   font-weight: 500;
   font-style: italic;
 }
+
+.currency i {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  background: rgba(2, 120, 136, 0.8);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+
 .footer button {
   font-size: 35px;
   border: none;
